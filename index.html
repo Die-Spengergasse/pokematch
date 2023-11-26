@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poke Memory SWP GRG</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokemon Memory Match Game</title>
+    <link rel="stylesheet" href="app.css" />
 </head>
-
 <body>
-    <header> <!-- Steuerungs Grid -->
-        <div id="fetch">
-            <button id="fetch-btn">Fetch List from API</button>
-            <button id="cancel-btn">Cancel</button>
-            <div class="number-input">
-                <input type="number" id="fetch-limit" value="2000" min="20" max="2000" step="100">
-                <label for="fetch-limit">(Limit (amount) to fetch at once)</label>
-            </div>
-            <textarea id="fetch-status" rows="2">Nothing Loaded Yet</textarea>
-        </div>
-        <div>
-            <div class="number-input">
-                <input type="number" id="grid-x" value="4" min="2" max="10">
-                <label for="grid-x">How many Columns</label>
-            </div>
-            <div class="number-input">
-                <input type="number" id="grid-y" value="4" min="2" max="10">
-                <label for="grid-y">How many Rows</label>
-            </div>
-            <button id="grid-draw">Draw!</button>
-            <textarea id="grid-status" rows="2">No Grid Yet</textarea>
-        </div>
-    </header>
-    <main id="main-grid">grrrr</main>
-    <footer>Brought to you by © GRG</footer>
-</body>
+    <div class="container">
 
+        <header>
+            <h1>PokeMatch</h1>
+            <button onclick="resetGame()">Reset</button>
+        </header>
+        <div id="game">    
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
+        
