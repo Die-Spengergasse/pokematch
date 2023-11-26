@@ -2,10 +2,18 @@ body {
     background-color: darkolivegreen;
     font-family: "Source Code Pro", monospace;
 }
+header,
+footer,
+main {
+    text-align: center;
+}
 header {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    text-align: center;
+    gap: 1em;
+}
+main {
+    display: grid;
     gap: 1em;
 }
 input {
