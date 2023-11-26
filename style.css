@@ -1,0 +1,47 @@
+body {
+    background-color: darkolivegreen;
+    font-family: "Source Code Pro", monospace;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+    gap: 1em;
+}
+input {
+    align-items: revert;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+button,
+label,
+input,
+textarea {
+    background-color: darkslategray;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    border: none;
+    text-align: center;
+}
+
+button {
+    border: 5px inset brown;
+    background-color: teal;
+}
+input,
+textarea,
+label {
+    display: block;
+}
+textarea,
+div.number-input {
+    background-color: darkslategray;
+    border: 3px solid chocolate;
+    border-radius: 0.5em;
+}
+button,
+div.number-input,
+textarea {
+    width: 98%;
+    margin: 0.1em auto;
+}
