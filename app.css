@@ -33,14 +33,15 @@ h1 {
     grid-gap: 10px;
 }
 .card {
-    box-shadow: 0 3px 10px rgba(200,200,200, 0.9);
+    box-shadow: 0 3px 10px rgba(200, 200, 200, 0.9);
     border-radius: 10px;
     position: relative;
     transform-style: preserve-3d;
     overflow: hidden;
 }
 
-.card > .front, .card > .back {
+.card > .front,
+.card > .back {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +53,7 @@ h1 {
     transition: transform 0.5s;
 }
 
-.back>h2 {
+.back > h2 {
     margin: 0;
     font-size: 16px;
 }
@@ -62,14 +63,14 @@ h1 {
 }
 
 .front {
-    background-image: url("/pokeball.png");
+    background-image: url("pokeball.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
 }
 
 button {
-    font-size:18px;
+    font-size: 18px;
     background-color: #c62828;
     color: white;
     border-radius: 5px;
@@ -79,6 +80,4 @@ button {
 }
 
 button:hover {
-
 }
-
