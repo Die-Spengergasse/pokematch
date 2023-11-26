@@ -53,3 +53,11 @@ textarea {
     width: 98%;
     margin: 0.1em auto;
 }
+
+/* Element | http://127.0.0.1:5500/index.html */
+
+main#main-grid > * {
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
