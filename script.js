@@ -1,6 +1,7 @@
 "use strict";
 let allPokes;
 let gridPokes;
+let consolePoke;
 const startURL = "https://pokeapi.co/api/v2/pokemon?limit=";
 const fetchLimit = document.getElementById("fetch-limit");
 const fetchBtn = document.getElementById("fetch-btn");
@@ -89,6 +90,7 @@ gridDraw.addEventListener("click", async () => {
         gridPokes.push(data);
     }
     gridPokes = [...gridPokes, ...gridPokes];
+    consolePoke = gridPokes[0];
     pokeIds = [...pokeIds, ...pokeIds];
 
     for (let i = 0; i < x * y; i++) {

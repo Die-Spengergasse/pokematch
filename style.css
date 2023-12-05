@@ -6,15 +6,18 @@ header,
 footer,
 main {
     text-align: center;
+    width: 80vw;
+    margin: auto;
 }
 header {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     gap: 1em;
+    grid-template-columns: repeat(8, auto);
 }
 main {
     display: grid;
     gap: 1em;
+    height: 80vh;
 }
 input {
     align-items: revert;
@@ -60,4 +63,5 @@ main#main-grid > * {
     height: 20vh;
     background-size: contain;
     background-repeat: no-repeat;
+    border: 1px solid black;
 }
