@@ -8,11 +8,11 @@ generator client {
 }
 
 model Pokemon {
-    id      Int     @id @default(autoincrement())
-    name    String?
-    height  Float?  @default(0)
-    weight  Float?  @default(0)
-    baseExp Float?  @default(0)
+    id      Int    @id @default(autoincrement())
+    name    String
+    height  Int?   @default(0)
+    weight  Int?   @default(0)
+    baseExp Int?   @default(0)
 
     abilities Ability[]
     moves     Move[]
@@ -21,18 +21,18 @@ model Pokemon {
 
 model Ability {
     id      Int       @id @default(autoincrement())
-    name    String
+    name    String    @unique
     pokemon Pokemon[]
 }
 
 model Move {
     id      Int       @id @default(autoincrement())
-    name    String
+    name    String    @unique
     pokemon Pokemon[]
 }
 
 model Type {
     id      Int       @id @default(autoincrement())
-    name    String
+    name    String    @unique
     pokemon Pokemon[]
 }
